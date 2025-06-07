@@ -7,6 +7,13 @@ export type Author = {
     status: "Online" | "Offline";
 };
 
+export type Project = {
+    company: string;
+    budget: number; // in dollars
+    status: "Active" | "Completed" | "On Hold";
+    completetion: number; // percentage 0-100
+};
+
 export const authors: Author[] = [
     {
         name: "John Doe",
@@ -39,5 +46,38 @@ export const authors: Author[] = [
         department: "Data",
         employedOn: "2019-11-05",
         status: "Online",
+    },
+];
+
+export const projects: Project[] = [
+    {
+        company: "Tech Innovations",
+        budget: 50000,
+        status: "Active",
+        completetion: 75,
+    },
+    {
+        company: "Creative Solutions",
+        budget: 120000,
+        status: "Completed",
+        completetion: 100,
+    },
+    {
+        company: "Future Tech",
+        budget: 75000,
+        status: "On Hold",
+        completetion: 40,
+    },
+    {
+        company: "Global Enterprises",
+        budget: 200000,
+        status: "Active",
+        completetion: 60,
+    },
+    {
+        company: "NextGen Systems",
+        budget: 30000,
+        status: "Completed",
+        completetion: 100,
     },
 ];

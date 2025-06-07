@@ -1,11 +1,13 @@
 import AuthorsTable from "@/components/AuthorsTable";
-import { authors } from "@/lib/fakeData";
+import ProjectsTable from "@/components/ProjectsTable";
+import { authors, projects } from "@/lib/fakeData";
 import React from "react";
 
 const TablesPage = () => {
     return (
-        <div>
+        <div className="space-y-8">
             <AuthorsTable authors={authors} />
+            <ProjectsTable projects={projects} />
         </div>
     );
 };
