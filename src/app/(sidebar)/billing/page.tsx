@@ -1,7 +1,12 @@
+import BillingCard from "@/components/BillingCard";
 import React from "react";
 
 const BillingPage = () => {
-    return <div></div>;
+    return (
+        <div>
+            <BillingCard />
+        </div>
+    );
 };
 
 export default BillingPage;

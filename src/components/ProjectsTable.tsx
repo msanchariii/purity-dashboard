@@ -57,7 +57,7 @@ const ProjectsTable = ({ projects }: { projects: Project[] }) => {
 
     return (
         <div className="bg-white p-6 rounded-lg shadow-sm space-y-4">
-            <h2 className="text-lg font-bold ml-4">Authors Table</h2>
+            <h2 className="text-lg font-bold ml-4">Projects Table</h2>
             <div className="overflow-x-auto rounded-md">
                 <table className="w-full text-left text-sm">
                     <thead className="text-dhusor uppercase tracking-wide text-xs border-b-2 border-gray-200 ">
