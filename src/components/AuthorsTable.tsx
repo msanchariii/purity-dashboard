@@ -1,4 +1,5 @@
 import { Author } from "@/lib/fakeData";
+import Image from "next/image";
 import React, { ReactNode } from "react";
 
 const TableCell = ({
@@ -57,7 +58,15 @@ const AuthorsTable = ({ authors }: { authors: Author[] }) => {
                                 className="border-b-1 border-gray-200 hover:bg-gray-50"
                             >
                                 <TableCell className="flex gap-4 items-center">
-                                    <div className="h-12 w-12 bg-gray-400 rounded-xl"></div>
+                                    <Image
+                                        src={`/assets/avatar/avatar${
+                                            index + 1
+                                        }.webp`}
+                                        height={50}
+                                        width={50}
+                                        className="h-12 w-12 bg-gray-400 rounded-xl"
+                                        alt={`${person.name}'s avatar`}
+                                    ></Image>
                                     <div>
                                         <div className="font-semibold text-base">
                                             {person.name}

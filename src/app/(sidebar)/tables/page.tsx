@@ -7,7 +7,7 @@ const TablesPage = () => {
     return (
         <div className="space-y-8">
             <AuthorsTable authors={authors} />
-            <ProjectsTable projects={projects} />
+            <ProjectsTable projects={projects} className="shadow-sm" />
         </div>
     );
 };

@@ -32,7 +32,13 @@ const TableHeaderCell = ({
     );
 };
 
-const ProjectsTable = ({ projects }: { projects: Project[] }) => {
+const ProjectsTable = ({
+    projects,
+    className,
+}: {
+    projects: Project[];
+    className?: string | undefined;
+}) => {
     const formatBudget = (budget: number) => {
         return new Intl.NumberFormat("en-US", {
             style: "currency",
@@ -56,7 +62,7 @@ const ProjectsTable = ({ projects }: { projects: Project[] }) => {
     };
 
     return (
-        <div className="bg-white p-6 rounded-lg shadow-sm space-y-4">
+        <div className={`bg-white p-6 rounded-lg space-y-4 ${className}`}>
             <h2 className="text-lg font-bold ml-4">Projects Table</h2>
             <div className="overflow-x-auto rounded-md">
                 <table className="w-full text-left text-sm">
@@ -92,7 +98,7 @@ const ProjectsTable = ({ projects }: { projects: Project[] }) => {
 
                                 <TableCell className="max-w-20 ">
                                     <span
-                                        className={`px-4 py-1 rounded-full border-[1.5px] font-medium ${computeStatusBadgeStyle(
+                                        className={`text-xs px-4 py-1 rounded-full border-[1.5px] font-medium ${computeStatusBadgeStyle(
                                             item.status
                                         )}`}
                                     >
@@ -100,7 +106,7 @@ const ProjectsTable = ({ projects }: { projects: Project[] }) => {
                                     </span>
                                 </TableCell>
 
-                                <TableCell className="font-medium w-80">
+                                <TableCell className="font-medium">
                                     <span className="font-bold text-lg text-blue-500">
                                         {item.completetion} %
                                     </span>

@@ -12,7 +12,7 @@ const BillingCard = () => {
                 <div className="text-white text-xl font-bold tracking-wider">
                     7812 2139 0823 XXXX
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-6 text-sm font-medium text-white/80">
                     <div>VALID THRU</div>
                     <div className="flex flex-col">
                         <span>CVV</span>
