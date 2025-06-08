@@ -55,7 +55,7 @@ const ProjectsTable = ({
             case "On Hold":
                 return "text-orange-500 bg-yellow-200 border-orange-500";
             case "Completed":
-                return "text-blue-700 bg-blue-200";
+                return "text-sky-700 bg-sky-200";
             default:
                 return "text-gray-100 bg-gray-400";
         }
@@ -112,13 +112,13 @@ const ProjectsTable = ({
                                 </TableCell>
 
                                 <TableCell className="font-medium">
-                                    <span className="font-bold text-lg text-blue-500">
+                                    <span className="font-bold text-lg text-sky-500">
                                         {item.completetion} %
                                     </span>
                                     {/* progress */}
                                     <div className="w-full bg-gray-200 rounded-full h-2 mt-1">
                                         <div
-                                            className="bg-blue-500 h-2 rounded-full"
+                                            className="bg-sky-500 h-2 rounded-full"
                                             style={{
                                                 width: `${item.completetion}%`,
                                             }}

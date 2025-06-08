@@ -18,22 +18,19 @@ const SidebarLink = ({
     return (
         <Link
             href={href}
-            className={`flex gap-4 items-center py-3 pl-6 lg:pr-10 xl:pr-16  ${
-                isSelected && "bg-white rounded-2xl shadow-sm"
-            }`}
+            className={`flex gap-4 items-center py-3 pl-6 lg:pr-10 xl:pr-16  ${isSelected && "bg-white rounded-2xl shadow-sm"
+                }`}
         >
             <Icon
-                className={`bg-blue-500 w-8 h-8 p-1.5 rounded-xl ${
-                    isSelected
-                        ? "bg-blue-500 text-white"
-                        : "bg-white text-blue-500"
-                } `}
+                className={`bg-sky-500 w-8 h-8 p-1.5 rounded-xl ${isSelected
+                        ? "bg-sky-500 text-white"
+                        : "bg-white text-sky-500"
+                    } `}
             />
 
             <div
-                className={`text-md font-bold mt-1 ${
-                    isSelected ? "text-kalo" : "text-dhusor"
-                }`}
+                className={`text-md font-bold mt-1 ${isSelected ? "text-kalo" : "text-dhusor"
+                    }`}
             >
                 {title}
             </div>

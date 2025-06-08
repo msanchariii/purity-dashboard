@@ -11,7 +11,7 @@ const BillingPage = () => {
             </GridItem>
             <GridItem className="h-full">
                 <div className="flex flex-col my-4 items-center">
-                    <FaWallet className=" text-white bg-blue-500 p-3 size-12 rounded-xl m-4" />
+                    <FaWallet className=" text-white bg-sky-500 p-3 size-12 rounded-xl m-4" />
                     <span className="font-bold">Salary</span>
                     <span className="text-xs font-bold text-dhusor">
                         Belong Interactive
@@ -23,7 +23,7 @@ const BillingPage = () => {
             </GridItem>{" "}
             <GridItem className="h-full">
                 <div className="flex flex-col my-4 items-center">
-                    <FaPaypal className=" text-white bg-blue-500 p-3 size-12 rounded-xl m-4" />
+                    <FaPaypal className=" text-white bg-sky-500 p-3 size-12 rounded-xl m-4" />
                     <span className="font-bold">Salary</span>
                     <span className="text-xs font-bold text-dhusor">
                         Freelance Payment
