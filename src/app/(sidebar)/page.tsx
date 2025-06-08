@@ -22,13 +22,25 @@ export default function Home() {
                     className={`flex items-center justify-between p-5 rounded-lg`}
                 >
                     <div className="flex flex-col gap-y-1 basis-2/3">
-                        <h3 className="text-md font-semibold text-dhusor  "></h3>
+                        <p className="text-sm font-semibold text-dhusor  ">
+                            Purity UI Dashboard
+                        </p>
+                        <h3 className="font-bold text-kalo">
+                            Built by Developers
+                        </h3>
+                        <p className="text-sm text-dhusor">
+                            From colors, cards, typography to complex elements,
+                            you will find the full documentation.
+                        </p>
                         <p className={`text-xl font-bold text-kalo`}></p>
+                        <button className="text-left cursor-pointer mt-12 hover:underline flex items-center gap-3">
+                            Read More <FaArrowRight className="" />
+                        </button>
                     </div>
-                    <div className=" text-white bg-sky-500 p-4 rounded-2xl basis-1/3 aspect-square flex items-center justify-center text-3xl font-bold">
+                    <div className=" text-white bg-sky-500 p-4 rounded-2xl basis-1/3 aspect-square flex items-center justify-center text-3xl font-bold space-x-2">
                         {/* Icon can be placed here if needed */}
                         <FaSuperpowers />
-                        Sanchari
+                        <h1>Sanchari</h1>
                     </div>
                 </div>
             </GridItem>

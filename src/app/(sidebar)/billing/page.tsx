@@ -1,3 +1,7 @@
+import BillingInformation from "@/components/billing/BillingInformation";
+import Invoices from "@/components/billing/Invoices";
+import PaymentMethod from "@/components/billing/PaymentMethod";
+import Transactions from "@/components/billing/Transactions";
 import BillingCard from "@/components/BillingCard";
 import { GridItem } from "@/components/ui/GridItem";
 import React from "react";
@@ -34,11 +38,17 @@ const BillingPage = () => {
                 <p className="font-bold text-center">%4550</p>
             </GridItem>
             <GridItem className="h-full row-span-2 col-span-1 sm:col-span-1 md:col-span-2 xl:col-span-3">
-                Stripe
+                <Invoices />
             </GridItem>
-            <GridItem className="col-span-5 h-36">Payment Method</GridItem>
-            <GridItem className="col-span-4 h-96">Billing Information</GridItem>
-            <GridItem className="col-span-4 h-96">Your Transactions</GridItem>
+            <GridItem className="col-span-5 h-36">
+                <PaymentMethod />
+            </GridItem>
+            <GridItem className="col-span-4 h-full">
+                <BillingInformation />
+            </GridItem>
+            <GridItem className="col-span-4 h-full">
+                <Transactions />
+            </GridItem>
         </div>
     );
 };
