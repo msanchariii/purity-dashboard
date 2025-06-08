@@ -1,3 +1,7 @@
+import { IconType } from "react-icons";
+import { FaAtlassian, FaSpotify, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { SiAdobexd } from "react-icons/si";
+
 export type Author = {
     name: string;
     email: string;
@@ -12,6 +16,8 @@ export type Project = {
     budget: number; // in dollars
     status: "Active" | "Completed" | "On Hold";
     completetion: number; // percentage 0-100
+    icon?: IconType;
+    iconClass?: string; // optional class for icon styling
 };
 
 export const authors: Author[] = [
@@ -55,29 +61,39 @@ export const projects: Project[] = [
         budget: 50000,
         status: "Active",
         completetion: 75,
+        icon: FaSpotify,
+        iconClass: "text-green-500",
     },
     {
         company: "Creative Solutions",
         budget: 120000,
         status: "Completed",
         completetion: 100,
+        icon: FaAtlassian,
+        iconClass: "text-blue-500",
     },
     {
         company: "Future Tech",
         budget: 75000,
         status: "On Hold",
         completetion: 40,
+        icon: SiAdobexd,
+        iconClass: "text-red-500 bg-red-100",
     },
     {
         company: "Global Enterprises",
         budget: 200000,
         status: "Active",
         completetion: 60,
+        icon: FaTelegram,
+        iconClass: "text-blue-500",
     },
     {
         company: "NextGen Systems",
         budget: 30000,
         status: "Completed",
         completetion: 100,
+        icon: FaWhatsapp,
+        iconClass: "text-green-500",
     },
 ];

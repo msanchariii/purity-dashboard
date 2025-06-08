@@ -86,7 +86,12 @@ const ProjectsTable = ({
                                 className="border-b-1 border-gray-200 hover:bg-gray-50"
                             >
                                 <TableCell className="flex gap-4 items-center">
-                                    <div className="h-8 w-8 bg-gray-400 rounded-xl"></div>
+                                    {/* <div className="h-8 w-8 bg-gray-400 rounded-xl"></div> */}
+                                    {item.icon && (
+                                        <item.icon
+                                            className={`size-5 ${item.iconClass}`}
+                                        />
+                                    )}
 
                                     <div className="font-semibold text-base">
                                         {item.company}
