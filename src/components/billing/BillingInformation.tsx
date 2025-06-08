@@ -36,7 +36,7 @@ const BillingInformation = ({}) => {
                 {billingInformationPlaceholder.map((info, index) => (
                     <div
                         key={index}
-                        className="p-4 mb-4 bg-gray-100/50 rounded-2xl text-xs font-medium space-y-1 text-dhusor"
+                        className="p-4 mb-8 bg-gray-100/50 rounded-2xl text-xs font-medium space-y-1 text-dhusor"
                     >
                         <h3 className="text-lg text-dhusor font-bold">
                             {info.name}
