@@ -29,17 +29,17 @@ const sidebarLinks = {
     accountPages: [
         {
             title: "Profile",
-            icon: MdManageAccounts, // Replace with actual icon
+            icon: MdManageAccounts,
             href: "/profile",
         },
         {
             title: "Sign In",
-            icon: FaFilePen, // Replace with actual icon
+            icon: FaFilePen,
             href: "/signin",
         },
         {
             title: "Sign Up",
-            icon: IoIosRocket, // Replace with actual icon
+            icon: IoIosRocket,
             href: "/signup",
         },
     ],
@@ -47,6 +47,7 @@ const sidebarLinks = {
 
 const Sidebar = ({ className }: { className?: string | undefined | null }) => {
     const pathname = usePathname();
+    const showAccountPages = false; // Change this to true if you want to show account pages
     console.log("Current Pathname:", pathname);
     return (
         <div className={`h-screen p-8 space-y-8 ${className}`}>
@@ -65,19 +66,20 @@ const Sidebar = ({ className }: { className?: string | undefined | null }) => {
                 ))}
                 {/* <SidebarLink  /> */}
             </div>
-            <div className="space-y-4">
-                <h2 className="pl-6 text-lg font-bold">Account Pages</h2>
-                {sidebarLinks.accountPages.map((link, index) => (
-                    <SidebarLink
-                        key={index}
-                        title={link.title}
-                        Icon={link.icon}
-                        href={link.href}
-                        isSelected={pathname === link.href}
-                    />
-                ))}
-                {/* <SidebarLink  /> */}
-            </div>
+            {showAccountPages && (
+                <div className="space-y-4">
+                    <h2 className="pl-6 text-lg font-bold">Account Pages</h2>
+                    {sidebarLinks.accountPages.map((link, index) => (
+                        <SidebarLink
+                            key={index}
+                            title={link.title}
+                            Icon={link.icon}
+                            href={link.href}
+                            isSelected={pathname === link.href}
+                        />
+                    ))}
+                </div>
+            )}
         </div>
     );
 };

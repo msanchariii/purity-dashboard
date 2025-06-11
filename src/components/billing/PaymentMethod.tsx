@@ -7,7 +7,7 @@ const PaymentMethod = () => {
         <div className="p-4 space-y-4">
             <div className="flex justify-between items-center">
                 <h4 className="font-bold text-lg">Payment Method</h4>
-                <button className="text-xs font-medium bg-blue-950 py-3 px-4 text-white rounded-xl hover:bg-blue-900 transition duration-200">
+                <button className="text-xs font-medium bg-blue-950 py-3 px-4 text-white rounded-xl hover:bg-blue-900 transition duration-200 cursor-pointer">
                     Add New Card
                 </button>
             </div>

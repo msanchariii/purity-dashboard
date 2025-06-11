@@ -103,7 +103,7 @@ const ProjectsTable = ({
 
                                 <TableCell className="max-w-20 ">
                                     <span
-                                        className={`text-xs px-4 py-1 rounded-full border-[1.5px] font-medium ${computeStatusBadgeStyle(
+                                        className={`text-xs px-2 py-1 rounded-full border-[1.5px] font-medium ${computeStatusBadgeStyle(
                                             item.status
                                         )}`}
                                     >

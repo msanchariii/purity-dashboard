@@ -3,7 +3,7 @@ import { SiMastercard } from "react-icons/si";
 
 const BillingCard = () => {
     return (
-        <div className="rounded-2xl overflow-hidden max-w-md aspect-video bg-[url(/assets/CardBG.jpg)] bg-no-repeat bg-cover p-6  shadow-sm space-y-4">
+        <div className="rounded-2xl overflow-hidden w-full h-full bg-[url(/assets/CardBG.jpg)] bg-no-repeat bg-cover p-6  shadow-sm space-y-4">
             <div className="flex items-center justify-between">
                 <span className="font-bold text-white">Purity UI</span>
                 <SiMastercard className="size-12 text-[#a0aec0]" />

@@ -5,6 +5,8 @@ import { projects } from "@/lib/fakeData";
 import StatCard, { stats } from "@/components/dashboard/StatCard";
 import { FaArrowRight, FaSuperpowers } from "react-icons/fa";
 import OrdersOverview from "@/components/dashboard/OrdersOverview";
+import DashboardAreaChart from "@/components/dashboard/DashboardAreaChart";
+import GradientBarChart from "@/components/dashboard/GradientBarChart";
 export default function Home() {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 p-2 sm:p-4 items-center">
@@ -62,11 +64,27 @@ export default function Home() {
                 </div>
             </GridItem>
 
-            <GridItem className="min-h-80 col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-3">
-                g
+            <GridItem className="h-full col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-3 py-6">
+                <div className="ml-4 mb-2">
+                    <h3 className="text-lg font-semibold">Active Users</h3>
+                    <p className="text-sm text-green-500 font-medium">
+                        +23% than last week
+                    </p>
+                </div>
+                <div className="rounded-2xl p-4">
+                    <GradientBarChart />
+                </div>
             </GridItem>
-            <GridItem className="min-h-80 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-5">
-                h
+            <GridItem className="h-full col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-5 py-6">
+                <div>
+                    <h3 className="font-semibold text-lg ml-8">
+                        Sales Overview
+                    </h3>
+                    <p className="text-sm text-green-500 font-medium ml-8 mb-2">
+                        5% more in 2021
+                    </p>
+                </div>
+                <DashboardAreaChart />
             </GridItem>
             <GridItem className="h-full col-span-1 sm:col-span-2 md:col-span-4 lg:col-span-6">
                 <ProjectsTable projects={projects} />
